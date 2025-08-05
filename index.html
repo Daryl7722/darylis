@@ -2,47 +2,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daryl Raj - Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
-        header { background: #222; color: white; padding: 20px; text-align: center; }
-        section { padding: 20px; max-width: 900px; margin: auto; }
-        h2 { color: #444; }
-        .card { background: white; padding: 15px; margin: 15px 0; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-        footer { text-align: center; padding: 10px; background: #eee; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Daryl Raj - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d0d0d;
+      color: #ccffcc;
+    }
+    header {
+      background: linear-gradient(135deg, #00ff99 0%, #00cc66 100%);
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      text-align: center;
+      padding: 50px 20px;
+      color: black;
+      box-shadow: 0 0 20px #00ff99;
+      animation: pulse 5s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 10px #00ff99; }
+      50% { box-shadow: 0 0 20px #00ff99; }
+      100% { box-shadow: 0 0 10px #00ff99; }
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      border-left: 5px solid #00ff99;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .card {
+      background: #1a1a1a;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px #00ff99;
+    }
+    a {
+      color: #00ff99;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #00ff99;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+      box-shadow: 0 0 20px #00ff99;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Daryl Raj</h1>
-        <p>IT Infra Enthusiast | AWS | Linux | Troubleshooting | Python | SQL</p>
-    </header>
-    <section>
-        <h2>About Me</h2>
-        <div class="card">
-            <p>Hello! I’m Daryl Raj, passionate about technology and infrastructure. I specialize in cloud platforms like AWS, operating systems like Linux & Windows, and solving real-world tech problems.</p>
-        </div>
+  <header>
+    <h1>Daryl Raj</h1>
+    <p>AWS Admin | Data Analyst | Developer | Tech Enthusiast</p>
+  </header>
 
-        <h2>Projects</h2>
-        <div class="card">
-            <h3>Server Monitoring Dashboard</h3>
-            <p>Built a real-time monitoring dashboard using Python, AWS CloudWatch, and Grafana.</p>
-        </div>
-        <div class="card">
-            <h3>Forgery Detection Model</h3>
-            <p>Trained a deep learning model to detect fake vs real images and deployed it in a UI.</p>
-        </div>
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I’m a dedicated and results-driven individual currently pursuing B.E. in Computer Engineering. With hands-on experience in AWS, Python, Power BI, SQL, and multiple projects under my belt, I thrive on solving real-world problems and managing infrastructure efficiently.</p>
+    </div>
 
-        <h2>Contact</h2>
-        <div class="card">
-            <p>Email: darylraj@example.com</p>
-            <p>LinkedIn: linkedin.com/in/darylraj</p>
-        </div>
-    </section>
-    <footer>
-        &copy; 2025 Daryl Raj. All rights reserved.
-    </footer>
+    <h2>Skills</h2>
+    <div class="card">
+      <p>Python, Oracle SQL, MySQL, AWS, Project Management, Power BI, Excel, Photoshop</p>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="card">
+      <strong>PIXEL GUARD</strong> – Deepfake/Image Forgery Detection using CNN on Windows<br>
+      <strong>VAULT</strong> – Cloud-based document storage using Firebase & Azure<br>
+      <strong>EXAM VISTA</strong> – Webcam-based Exam Proctoring System<br>
+      <strong>WAKE UP</strong> – Android-based Driver Drowsiness Detection
+    </div>
+
+    <h2>Internship</h2>
+    <div class="card">
+      <p><strong>Data Science & Analytics at Proxenix (2025):</strong> Worked with real-world datasets, performed EDA, and built a text summarizer.</p>
+      <p><strong>AWS Admin at Ecovis (Ongoing):</strong> Managing EC2, S3, IAM configurations, and cloud infra tasks.</p>
+    </div>
+
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: <a href="mailto:ddaryl2002@gmail.com">ddaryl2002@gmail.com</a></p>
+      <p>Phone: +91-9324054691</p>
+      <p>Location: Dombivli, Thane, Maharashtra, India</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Daryl Raj | darylis.online
+  </footer>
 </body>
 </html>
