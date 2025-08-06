@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>DARYL RAJ - PORTFOLIO</title>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -27,6 +28,15 @@
       font-size: 3em;
       font-weight: bold;
       text-transform: uppercase;
+      animation: typewriter 3s steps(20) 1s 1 normal both;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 3px solid #00ff99;
+      width: 0;
+    }
+    @keyframes typewriter {
+      from { width: 0; }
+      to { width: 100%; }
     }
     @keyframes pulse {
       0% { box-shadow: 0 0 10px #00ff99; }
@@ -42,6 +52,7 @@
       border-left: 5px solid #00ff99;
       padding-left: 10px;
       margin-bottom: 20px;
+      font-size: 1.8em;
     }
     .card {
       background: #1a1a1a;
@@ -63,70 +74,83 @@
       border-top-right-radius: 40px;
       box-shadow: 0 0 20px #00ff99;
     }
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      section {
+        padding: 20px 10px;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
+  <header data-aos="fade-down">
     <h1>DARYL RAJ</h1>
     <p>AWS Admin | Data Analyst | Developer | Tech Enthusiast</p>
   </header>
 
   <section>
-    <h2>About Me</h2>
-    <div class="card">
-      <p>I’m a dedicated and results-driven individual who completed B.E. in Computer Engineering. With hands-on experience in AWS, Python, Power BI, SQL, and multiple projects under my belt, I thrive on solving real-world problems and managing infrastructure efficiently.</p>
+    <h2 data-aos="fade-right">About Me</h2>
+    <div class="card" data-aos="fade-up">
+      <p>I’m a dedicated and results-driven individual currently pursuing B.E. in Computer Engineering. With hands-on experience in AWS, Python, Power BI, SQL, and multiple projects under my belt, I thrive on solving real-world problems and managing infrastructure efficiently.</p>
     </div>
 
-    <h2>Skills</h2>
-    <div class="card">
+    <h2 data-aos="fade-right">Skills</h2>
+    <div class="card" data-aos="fade-up">
       <p>Python, Oracle SQL, MySQL, AWS, Project Management, Power BI, Excel, Photoshop</p>
     </div>
 
-    <h2>Certifications</h2>
-    <div class="card">
+    <h2 data-aos="fade-right">Certifications</h2>
+    <div class="card" data-aos="fade-up">
       <strong>Data Analytics (2024)</strong><br>
       Skilled in Power BI and Excel, and learned how to analyze data effectively.<br><br>
       <strong>Oracle DBA (Ongoing)</strong><br>
       Completed SQL module and currently pursuing Database Administration.
     </div>
 
-    <h2>Projects</h2>
-    <div class="card">
+    <h2 data-aos="fade-right">Projects</h2>
+    <div class="card" data-aos="fade-up">
       <strong>PIXEL GUARD</strong> – Deepfake/Image Forgery Detection using CNN on Windows<br>
       <strong>VAULT</strong> – Cloud-based document storage using Firebase & Azure<br>
       <strong>EXAM VISTA</strong> – Webcam-based Exam Proctoring System<br>
       <strong>WAKE UP</strong> – Android-based Driver Drowsiness Detection
     </div>
 
-    <h2>Internship</h2>
-    <div class="card">
+    <h2 data-aos="fade-right">Internship</h2>
+    <div class="card" data-aos="fade-up">
       <p><strong>Data Science & Analytics at Proxenix (2025):</strong> Worked with real-world datasets, performed EDA, and built a text summarizer.</p>
       <p><strong>AWS Admin at Ecovis (Ongoing):</strong> Managing EC2, S3, IAM configurations, and cloud infra tasks.</p>
     </div>
 
-    <h2>Responsibilities</h2>
-    <div class="card">
+    <h2 data-aos="fade-right">Responsibilities</h2>
+    <div class="card" data-aos="fade-up">
       <strong>Social Media Head – ACM</strong><br>
       Grew ACM Instagram page by 200+ followers, designed posters and handled outreach.<br><br>
       <strong>Cultural CR of BE</strong><br>
       Organised and planned all final-year cultural events and represented students in college activities.
     </div>
 
-    <h2>Personal Interests</h2>
-    <div class="card">
+    <h2 data-aos="fade-right">Personal Interests</h2>
+    <div class="card" data-aos="fade-up">
       <p>Collecting watches and shoes, Poetry</p>
     </div>
 
-    <h2>Contact</h2>
-    <div class="card">
+    <h2 data-aos="fade-right">Contact</h2>
+    <div class="card" data-aos="fade-up">
       <p>Email: <a href="mailto:ddaryl2002@gmail.com">ddaryl2002@gmail.com</a></p>
       <p>Phone: +91-9324054691</p>
       <p>Location: Dombivli, Thane, Maharashtra, India</p>
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 Daryl Raj | darylis.online
+  <footer data-aos="fade-up">
+    &copy; 2025 DARYL RAJ | darylis.online
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
